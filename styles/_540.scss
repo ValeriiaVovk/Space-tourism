@@ -1,0 +1,350 @@
+@media (max-width: 540px) {    
+    .header {
+        padding-top: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        position: relative;
+    
+        &__nav {
+            display: none;
+        }   
+    }
+
+    .burger-menu {
+        width: 24px;
+        height: 21px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+    }
+
+    .burger-menu span {
+        width: 100%;
+        height: 3px;
+        transform: scale(1);
+        background-color: $blue-color;
+    }
+
+    .burger-menu::before {
+        content: '';
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        background-color: $blue-color;
+        left: 0;
+        top: 0;
+    }
+
+    .burger-menu::after {
+        content: '';
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        background-color: $blue-color;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .burger-menu.active-burger span {
+        transform: scale(0);
+    }
+
+    .burger-menu.active-burger::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    } 
+    
+    .burger-menu.active-burger::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+
+    .mobile-menu {
+        backdrop-filter: blur(81.54845428466797px);
+        background: rgba(255, 255, 255, 0.04);
+        width: 68vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .mobile_nav {
+        padding-top: 118px;
+        padding-left: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        li a {
+            font-size: 16px;
+            letter-spacing: 0.17em;
+            color: $white-color;
+
+            span {
+                font-weight: 700;
+                padding-right: 14px;
+            }
+        }
+    }
+
+    .home_main {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    
+    .home__hero {
+        margin-bottom: 81px;
+        gap: 16px;
+        width: 327px;
+    
+        &-info {
+            font-size: 16px;
+        }
+
+        &-header {
+            font-size: 80px;
+            line-height: 125%;
+        }
+    
+        &-about {
+            font-size: 15px;
+            line-height: 167%;
+        }
+    }
+    
+    .home__explore {
+        width: 150px;
+        height: 150px;
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+    // Destination pages 
+
+    .destination {
+        padding: 24px 24px 58px 24px;
+
+        &__header {
+            font-size: 16px;
+            margin-bottom: 32px;
+            text-align: center;
+
+            span {
+                padding-right: 18px;
+            }
+        }
+
+        &__about {
+            gap: 26px;
+
+            &-img {
+                
+                img {
+                    width: 170px;
+                    height: 170px;
+                }
+            }
+
+            &-more {
+
+                ul {
+                    gap: 26px;
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    font-size: 56px;
+                    margin-bottom: 1px;
+                }
+
+                &_info {
+                    font-size: 15px;
+                    line-height: 167%;
+                    margin-bottom: 32px;
+                }
+
+                &_numbers {
+                    flex-direction: column;
+                    gap: 32px;
+                    justify-content: center;
+                    max-width: 573px;
+                    width: 100%;
+                    padding-top: 32px;
+
+                    &-travel {
+                        padding-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Crew pages
+
+    .crew {
+        padding: 24px 24px 104px 24px;
+
+        &__header {
+            font-size: 16px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        &__about {
+            flex-direction: column-reverse;
+
+            &-person {
+                flex-direction: column-reverse;
+                padding-top: 32px;
+                border-top: 1px solid #383b4b;
+
+                &_position {
+                    font-size: 16px;
+                }
+
+                &_name {
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                    width: 327px;
+                    text-align: center;
+                }
+
+                &_info {
+                    font-size: 15px;
+                    line-height: 167%;
+                    margin-bottom: 0px;
+                    max-width: 327px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                &_pagination {
+                    gap: 16px;
+                    padding-bottom: 40px;
+
+                    &-button {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+
+            &-img {
+                height: 222px;
+            }
+        }
+    }
+
+    .img-douglas {
+        width: 177px;
+        height: 222px;
+    }
+
+    .img-mark {
+        width: 153px;
+        height: 222px;
+    }
+
+    .img-victor {
+        width: 180px;
+        height: 222px;
+    }
+
+    .img-anousheh {
+        width: 226px;
+        height: 222px;
+    }
+
+    .crew-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    //Technology page
+
+    .technology {
+        padding: 24px 0px 81px 0px;
+
+        &__header {
+            font-size: 16px;
+            margin-bottom: 32px;
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        &__about {
+            gap: 34px;
+
+            &-details {
+                gap: 26px;
+
+                &_pagination {
+
+                    &-button {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                    }
+                }
+
+                &_info {
+                    max-width: 327px;
+                    width: 100%;
+                    padding-left: 24px;
+                    padding-right: 24px;
+
+                    &-term {
+                        font-size: 14px;
+                        margin-bottom: 9px;
+                    }
+
+                    &-name {
+                        font-size: 24px;
+                    }
+
+                    &-more {
+                        font-size: 15px;
+                        line-height: 167%;
+                    }
+                }
+            }
+
+            &-img {
+                max-width: 375px;
+                width: 100%;
+                height: 170px;
+    
+                &_vehicle {
+                    background: url(../images/mobile/mobile_vehicle.png);
+                    background-position: center center;
+                    max-width: 375px;
+                    width: 100%;
+                    height: 170px;
+                }
+    
+                &_spaceport {
+                    background: url(../images/mobile/mobile_spaceport.png);
+                    background-position: center center;
+                    max-width: 375px;
+                    width: 100%;
+                    height: 170px;
+                }
+    
+                &_capsule {
+                    background: url(../images/mobile/mobile_capsule.png);
+                    background-position: center center;
+                    max-width: 375px;
+                    width: 100%;
+                    height: 170px;
+                }
+            }
+        }
+    }
+}

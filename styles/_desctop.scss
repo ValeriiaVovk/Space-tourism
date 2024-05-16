@@ -1,0 +1,432 @@
+.home_body {
+    background: url(../images/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding-top: 40px;
+    padding-left: 55px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__hr {
+        width: 473px;
+        height: 1px;
+        background: #fff;
+        opacity: 0.25;
+        position: absolute;
+        top: 88px;
+        left: 167px;
+        z-index: 99;
+    }
+
+    &__nav {
+        backdrop-filter: blur(81.54845428466797px);
+        background: rgba(255, 255, 255, 0.04);
+        padding-left: 123px;
+        padding-top: 34px;
+        padding-right: 165px;
+        height: 96px;
+
+        ul {
+            display: flex;
+            gap: 48px;
+
+            li a {
+                font-size: 16px;
+                letter-spacing: 0.17em;
+                color: $white-color;
+                padding-bottom: 38px;
+                transition: all ease-in-out 0.2s;
+
+                span {
+                    font-weight: 700;
+                    padding-right: 14px;
+                }
+            }
+
+            li a:hover {
+                border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}
+
+.nav-active {
+    border-bottom: 3px solid #fff;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.home_main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-top: 251px;
+    padding-bottom: 131px;
+} 
+
+.home__hero {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &-info {
+        font-size: 28px;
+        letter-spacing: 0.17em;
+        color: $blue-color;
+    }
+
+    &-header {
+        font-family: $second-font-family;
+        font-size: 150px;
+        color: $white-color;
+    }
+
+    &-about {
+        font-family: $third-font-family;
+        line-height: 178%;
+        color: $blue-color;
+    }
+}
+
+.home__explore {
+    width: 274px;
+    height: 274px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 1s;
+
+    a {
+        font-family: $second-font-family;
+        font-weight: 400;
+        font-size: 32px;
+        letter-spacing: 0.06em;
+        color: $black-color;
+    }
+}
+
+.home__explore:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+// Destination pages 
+
+.destination_body {
+    background: url(../images/destination-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destination {
+    padding: 76px 163px 112px 166px;
+
+    &__header {
+        font-size: 28px;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 64px;
+
+        span {
+            opacity: 0.25;
+            padding-right: 28px;
+        }
+    }
+
+    &__about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-img {
+            padding-left: 63px;
+        }
+
+        &-more {
+            max-width: 445px;
+            width: 100%;
+
+            ul {
+                display: flex;
+                gap: 35px;
+                margin-bottom: 37px;
+            }
+
+            &_button {
+                font-family: $main-font-family;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 0.17em;
+                color: #d0d6f9;
+                padding-bottom: 12px;
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: all ease-in-out 0.2s;
+            }
+
+            &_button:hover {
+                border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+            }
+
+            h3 {
+                font-family: $second-font-family;
+                font-weight: 400;
+                font-size: 100px;
+                color: $white-color;
+                margin-bottom: 14px;
+            }
+
+            &_info {
+                font-family: $third-font-family;
+                line-height: 178%;
+                color: $blue-color;
+                margin-bottom: 54px;
+            }
+
+            &_numbers {
+                border-top: 1px solid #383b4b;
+                display: flex;
+                gap: 79px;
+
+                &-travel {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    padding-top: 28px;
+
+                    &_criteria {
+                        font-size: 14px;
+                        letter-spacing: 0.17em;
+                        text-transform: uppercase;
+                        color: $blue-color;
+                    }
+
+                    &_indicator {
+                        font-family: $second-font-family;
+                        font-size: 28px;
+                        text-transform: uppercase;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.destination-active {
+    border-bottom: 3px solid #fff;
+    color: $white-color;
+}
+
+//Crew pages
+
+.crew-body {
+    background: url(../images/crew-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.crew {
+    padding: 76px 137px 0px 165px;
+
+    &__header {
+        font-size: 28px;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: $white-color;
+
+        span {
+            opacity: 0.25;
+            padding-right: 24px;
+        }
+    }
+
+    &__about {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &-person {
+            max-width: 614px;
+            width: 100%;
+
+            &_position {
+                font-family: $second-font-family;
+                font-size: 32px;
+                text-transform: uppercase;
+                color: $white-color;
+                opacity: 0.5;
+                margin-bottom: 15px;
+            }
+
+            &_name {
+                font-family: $second-font-family;
+                font-size: 56px;
+                text-transform: uppercase;
+                margin-bottom: 27px;
+                width: 614px;
+            }
+
+            &_info {
+                font-family: $third-font-family;
+                font-size: 18px;
+                line-height: 178%;
+                color: $blue-color;
+                margin-bottom: 120px;
+                max-width: 444px;
+                width: 100%;
+            }
+
+            &_pagination {
+                display: flex;
+                gap: 24px;
+                padding-bottom: 94px;
+
+                &-button {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    background-color: rgba(255, 255, 255, 0.174363);
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all ease-in-out 0.5s;
+                }
+
+                &-button:hover {
+                    background-color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.crew-pagination-active {
+    background-color: white;
+}
+
+//Technology page
+
+.technology_body {
+    background: url(../images/technology-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.technology {
+    padding: 76px 0px 101px 165px;
+
+    &__header {
+        font-size: 28px;
+        letter-spacing: 0.17em;
+        margin-bottom: 26px;
+
+        span {
+            opacity: 0.25;
+            padding-right: 24px;
+        }
+    }
+
+    &__about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-details {
+            display: flex;
+            gap: 80px;
+
+            &_pagination {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                &-button {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100%;
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    background-color: transparent;
+                    font-family: $second-font-family;
+                    font-weight: 400;
+                    font-size: 32px;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    color: $white-color;
+                    cursor: pointer;
+                    transition: all ease-in-out 0.5s;
+                }
+
+                &-button:hover {
+                    border: 1px solid rgb(255, 255, 255);
+                }
+            }
+
+            &_info {
+                max-width: 470px;
+                width: 100%;
+
+                &-term {
+                    font-size: 16px;
+                    letter-spacing: 0.17em;
+                    color: $blue-color;
+                    margin-bottom: 11px;
+                }
+
+                &-name {
+                    font-family: $second-font-family;
+                    font-size: 56px;
+                    margin-bottom: 17px;
+                }
+
+                &-more {
+                    font-family: $third-font-family;
+                    font-size: 18px;
+                    line-height: 178%;
+                    color: $blue-color;
+                }
+            }
+        }
+
+        &-img {
+            width: 515px;
+            height: 527px;
+
+            &_vehicle {
+                background: url(../images/launch-vehicle.jpg);
+                width: 515px;
+                height: 527px;
+            }
+
+            &_spaceport {
+                background: url(../images/spaceport.jpg);
+                width: 515px;
+                height: 527px;
+            }
+
+            &_capsule {
+                background: url(../images/capsule.jpg);
+                width: 515px;
+                height: 527px;
+            }
+        }
+    }
+}
+
+.technology-pagination-active {
+    border: none;
+    background-color: $white-color;
+    color: $black-color;
+}

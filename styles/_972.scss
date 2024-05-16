@@ -1,0 +1,300 @@
+@media (max-width: 972px) {
+    .home_body {
+        background: url(../images/tablet/tablet-hero-bg.jpg);
+        background-size: cover;
+    }
+    
+    .header {
+        padding-top: 0px;
+        padding-left: 40px;
+    
+        &__hr {
+            display: none;
+        }
+    
+        &__nav {
+            padding-left: 48px;
+            padding-top: 39px;
+            padding-right: 46px;
+    
+            ul {
+                display: flex;
+                gap: 37px;
+    
+                li a {
+                    font-size: 14px;
+                    letter-spacing: 0.17em;
+                    padding-bottom: 33px;
+    
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    .home_main {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 106px;
+        padding-bottom: 90px;
+    }
+    
+    .home__hero {
+        align-items: center;
+        margin-bottom: 156px;
+    
+        &-info {
+            font-size: 20px;
+        }
+    
+        &-about {
+            font-size: 16px;
+            line-height: 175%;
+            text-align: center;
+        }
+    }
+    
+    .home__explore {
+        width: 242px;
+        height: 242px;
+    }
+
+    // Destination pages 
+
+    .destination {
+        padding: 40px 98px 62px 38px;
+
+        &__header {
+            font-size: 20px;
+            margin-bottom: 60px;
+            font-weight: 400;
+
+            span {
+                padding-right: 19px;
+            }
+        }
+
+        &__about {
+            flex-direction: column;
+            justify-content: center;
+            gap: 53px;
+
+            &-img {
+                padding-left: 0px;
+                
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            &-more {
+                max-width: 573px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                ul {
+                    margin-bottom: 32px;
+                }
+
+                h3 {
+                    font-size: 80px;
+                    margin-bottom: 8px;
+                }
+
+                &_info {
+                    font-size: 16px;
+                    line-height: 175%;
+                    margin-bottom: 49px;
+                    text-align: center;
+                }
+
+                &_numbers {
+                    justify-content: space-evenly;
+                    max-width: 573px;
+                    width: 100%;
+
+                    &-travel {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    //Crew pages
+
+    .crew {
+        padding: 40px 88px 0px 38px;
+
+        &__header {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 60px;
+
+            span {
+                padding-right: 16px;
+            }
+        }
+
+        &__about {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &-person {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &_position {
+                    font-size: 24px;
+                    margin-bottom: 8px;
+                    text-align: center;
+                }
+
+                &_name {
+                    font-size: 40px;
+                    margin-bottom: 16px;
+                    width: 457px;
+                    text-align: center;
+                }
+
+                &_info {
+                    font-size: 16px;
+                    line-height: 175%;
+                    margin-bottom: 40px;
+                    max-width: 520px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                &_pagination {
+                    gap: 16px;
+                    padding-bottom: 40px;
+
+                    &-button {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .img-douglas {
+        width: 456px;
+        height: 572px;
+    }
+
+    .img-mark {
+        width: 368px;
+        height: 532px;
+    }
+
+    .img-victor {
+        width: 433px;
+        height: 532px;
+    }
+
+    .img-anousheh {
+        width: 539px;
+        height: 532px;
+    }
+
+    //Technology page
+
+    .technology {
+        padding: 40px 0px 97px 0px;
+
+        &__header {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.17em;
+            margin-bottom: 60px;
+            padding-left: 38px;
+
+            span {
+                padding-right: 16px;
+            }
+        }
+
+        &__about {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 56px;
+
+            &-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 44px;
+
+                &_pagination {
+                    flex-direction: row;
+                    gap: 16px;
+
+                    &-button {
+                        width: 60px;
+                        height: 60px;
+                        font-size: 24px;
+                    }
+                }
+
+                &_info {
+
+                    &-term {
+                        margin-bottom: 16px;
+                        text-align: center;
+                    }
+
+                    &-name {
+                        font-size: 40px;
+                        margin-bottom: 16px;
+                        text-align: center;
+                    }
+
+                    &-more {
+                        font-size: 16px;
+                        line-height: 175%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            &-img {
+                max-width: 768px;
+                width: 100%;
+                height: 310px;
+    
+                &_vehicle {
+                    background: url(../images/tablet/tablet-launch-vehicle.jpg);
+                    background-position: center center;
+                    max-width: 768px;
+                    width: 100%;
+                    height: 310px;
+                }
+    
+                &_spaceport {
+                    background: url(../images/tablet/tablet-spaceport.jpg);
+                    background-position: center center;
+                    max-width: 768px;
+                    width: 100%;
+                    height: 310px;
+                }
+    
+                &_capsule {
+                    background: url(../images/tablet/tablet-capsule.jpg);
+                    background-position: center center;
+                    max-width: 768px;
+                    width: 100%;
+                    height: 310px;
+                }
+            }
+        }
+    }
+}
